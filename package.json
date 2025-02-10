@@ -1,0 +1,38 @@
+{
+  "name": "dexter-langchain-agent",
+  "version": "0.0.1",
+  "description": "A Langchain.js agent for blockchain tasks using LLaMA models.",
+  "main": "dist/agent.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "start": "rm -rf dist && npm run build && node dist/server.js",
+    "update-stack": "bash scripts/update-stack.sh",
+    "docker-build": "bash scripts/docker-build.sh",
+    "docker-push": "bash scripts/docker-push.sh"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.3.28",
+    "@langchain/core": "^0.3.35",
+    "@langchain/langgraph": "^0.2.41",
+    "@langchain/openai": "^0.4.0",
+    "@mysten/sui": "1.20.0",
+    "@suilend/sdk": "^1.1.38",
+    "@suilend/springsui-sdk": "^1.0.19",
+    "aftermath-ts-sdk": "^1.2.49",
+    "atoma-sdk": "github:atoma-network/atoma-sdk-typescript",
+    "aws-sdk": "^2.1692.0",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "langchain": "^0.3.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "typescript": "^5.4.5"
+  },
+  "author": "self.id",
+  "license": "MIT"
+}
